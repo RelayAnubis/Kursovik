@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Билеты</title>
+    <link rel="stylesheet" href="puy.css"> 
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="Главная.html">
+                    <img src="logo.png" alt="Логотип Relayzoo" />
+                </a>
+            </div>
+            <h1>Билеты</h1>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="ticket-info">
+            <h2 style="color: white">
+            Цены на билеты</h2>
+            <div class="ticket-block" id="adult-modal">
+                <h3>Взрослый билет</h3>
+                <p>500 руб.</p>
+                <a href="Korzina.html" class="ticket-button">Купить билет</a>
+            </div>
+
+            <div class="ticket-block" id="child-modal">
+                <h3>Детский билет (до 12 лет)</h3>
+                <p>300 руб.</p>
+                <a href="Korzina.html" class="ticket-button">Купить билет</a>
+            </div>
+
+            <div class="ticket-block" id="senior-modal">
+                <h3>Пенсионный билет</h3>
+                <p>400 руб.</p>
+                <a href="Korzina.html" class="ticket-button">Купить билет</a>
+            </div>
+
+            <div class="ticket-block" id="family-modal">
+                <h3>Семейный пакет (2 взрослых + 2 ребенка)</h3>
+                <p>1500 руб.</p>
+                <a href="Korzina.html" class="ticket-button">Купить билет</a>
+            </div>
+
+            <!-- Условия покупки -->
+            <h2 style="color: white">
+            Условия покупки</h2>
+            <p style="color: white">Билеты можно приобрести:</p>
+            <ul style="color: white">
+                <li>На нашем сайте через форму онлайн-бронирования.</li>
+                <li>В кассах зоопарка при входе.</li>
+                <li>Через авторизованные точки продаж.</li>
+            </ul>
+
+            <h2 style="color: white">Часы работы</h2>
+            <p style="color: white">Зоопарк открыт каждый день с 9:00 до 18:00. Последний вход в 17:00.</p>
+
+            <h2 style="color: white">Контактная информация</h2>
+            <p style="color: white">Если у вас есть вопросы по поводу покупки билетов, пожалуйста, свяжитесь с нами:</p>
+            <p style="color: white">Email: RelayCompany@rc.com</p>
+            <p style="color: white">Телефон: 24-22-05</p>
+        </section>
+
+        <div id="adult-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Взрослый билет</h2>
+                <p>Цена билета составляет 500 руб. Это стандартный билет для взрослых.</p>
+           
+                <button onclick="purchaseTicket()">Купить билет</button>
+
+            </div>
+        </div>
+
+        <!-- Детский билет -->
+        <div id="child-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Детский билет</h2>
+                <p>Цена билета составляет 300 руб. Доступен для детей до 12 лет.</p>
+                <button onclick="purchaseTicket()">Купить билет</button>
+            </div>
+        </div>
+
+        <!-- Пенсионный билет -->
+        <div id="senior-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Пенсионный билет</h2>
+                <p>Цена билета составляет 400 руб. Для пенсионеров.</p>
+                <button onclick="purchaseTicket()">Купить билет</button>
+            </div>
+        </div>
+
+        <!-- Семейный пакет -->
+        <div id="family-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Семейный пакет</h2>
+                <p>Цена пакета составляет 1500 руб. Включает два взрослых и двух детей.</p>
+                <button onclick="purchaseTicket()">Купить билет</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RelayZoo. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

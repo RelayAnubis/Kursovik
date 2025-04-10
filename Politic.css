@@ -1,0 +1,74 @@
+еbody {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(to right, #5122c8, #60ff00);
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+    .logo img {
+        max-width: 50px;
+    }
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+.main-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-grow: 1; 
+}
+
+main {
+    max-width: 800px; 
+    width: 100%; 
+}
+
+footer {
+    background: linear-gradient(to right, #5122c8, #60ff00);
+    color: white; 
+    padding: 10px 20px; 
+    text-align: center; 
+}
+
+@media (max-width: 1024px) {
+    /* Стили для планшетов */
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Стили для мобильных устройств */
+    .header-container {
+        flex-direction: column;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}

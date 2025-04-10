@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.9;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(to right, #5122c8, #60ff00);
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+    .logo img {
+        max-width: 12vh;
+    }
+
+h1 {
+    margin: 0;
+    color: white;
+}
+
+.main-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start;
+    background-image: url('Fon.png');
+    background-size: auto;
+}
+
+.purchase-form {
+    max-width: 600px; 
+    padding: 20px; 
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+    .purchase-form h2 {
+        color: #333; 
+    }
+
+    .purchase-form label {
+        display: block; 
+        margin-bottom: 5px; 
+    }
+
+    .purchase-form input,
+    .purchase-form select {
+        width: 100%; 
+        padding: 5px; 
+        margin-bottom: 15px; 
+        border-radius: 5px;
+    }
+
+    .purchase-form button {
+        background-color: #6a5acd; 
+        color: white;
+        border: none;
+        padding: 10px 20px; 
+        cursor: pointer; 
+    }
+
+        .purchase-form button:hover {
+            background-color: #5a4cb1; 
+        }
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background: linear-gradient(to right, #5122c8, #60ff00);
+    color: white;
+
+    left: 0;
+    bottom: 0; 
+    width: 100%; 
+}
